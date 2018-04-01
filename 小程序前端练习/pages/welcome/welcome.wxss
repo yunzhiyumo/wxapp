@@ -1,0 +1,51 @@
+/*iphone 6 设计时用宽750*1334像素 
+1pt = 2px = 2rpx 
+文字建议使用pt */
+
+
+page{
+  background-color: #b3d4db;
+  height: 100%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image{
+  margin-top: 160rpx;
+  margin-bottom: 30rpx;
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 15rpx;
+}
+.title{
+  margin-top: 100rpx;
+  color: red;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.button{
+  margin-top: 200rpx;
+  border: 1px solid #405f80;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moto{
+  font-size: 22rpx;
+  font-weight: bold;
+  color: #405f80;
+}
+
+/*view 变成flex之后的5大属性
+方向 flex-direction:row|row-reverse|column|column-reverse;
+换行 flex-wrap:nowrap|wrap|wrap-reverse;
+上下对齐 align-items:flex-start|flex-end|center|baseline|stretch;
+多轴线上下对齐 align-content：flex-start|flex-end|center|space-between|space-around|stretch;
+左右对齐 justify-content：flex-start|flex-end|center|space-between|space-around;
+子元素单独上下居中 vertical-align: middle;
+*/

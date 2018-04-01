@@ -1,0 +1,26 @@
+<!--pages/posts/post-detail/post-detail.wxml-->
+
+<view class='container'>
+
+  <image class='head-image' src="{{isPlayingMusic? posts_key.music.coverImgUrl:posts_key.headImgSrc}}"></image>
+  <image class='audio' catchtap='onMusicTap' src="{{isPlayingMusic? '/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
+  <view class='author-data'>
+    <image class='author-image' src='{{posts_key.avatar}}'></image>
+    <text class='author' >{{posts_key.author}}</text>
+    <text class='const-text'>发表于</text>
+    <text class='const-text'>{{posts_key.dateTime}}</text>
+  </view>
+  <text class='title'>{{posts_key.title}}</text>
+
+  <view class='tool'>
+    <view class='circle-img'>
+      <image wx:if="{{collected}}" catchtap='onCollectionTap' src="/images/icon/collection.png"></image>
+      <image wx:else catchtap='onCollectionTap' src="/images/icon/collection-anti.png"></image>
+      <image catchtap='onShare' class='share-img' src="/images/icon/share.png"></image>
+    </view>
+    <view class='horizon'></view>
+  </view>
+
+  <view class='detail'>{{posts_key.detail}}</view>
+
+</view>

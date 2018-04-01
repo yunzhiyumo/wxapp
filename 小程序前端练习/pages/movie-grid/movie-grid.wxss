@@ -1,0 +1,10 @@
+@import "/pages/movie/movie.wxss";
+
+.signvie{
+  float: left;
+  margin-bottom: 40rpx;
+}
+.gridcontainer{
+  height: 1300rpx;
+  margin: 40rpx 0 40rpx 6rpx;
+}

@@ -1,0 +1,4 @@
+<import src="../movie-grid/movie-grid.wxml" />
+<view catchtap='onMovieClick' data-movieid="{{movieId}}">
+  <template is="movieGrid" data="{{movieData}}" />
+</view>

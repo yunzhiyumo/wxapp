@@ -1,0 +1,12 @@
+<!--http://t.yushu.im -->
+
+<view class='container'>
+  <image class='image' src='/images/avatar/1.png'></image>
+  <text class='title'>你好\t{{userdata}}</text>
+  <view class='button'>
+    <text catchtap='onClickBegin' class='moto'>开启小程序之旅</text>
+  </view>
+  <view class='button'>
+    <text catchtap='opensetting' class='moto'>授权设置</text>
+  </view>
+</view>
